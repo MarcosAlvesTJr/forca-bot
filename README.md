@@ -1,6 +1,7 @@
 # Sobre
 
-Um simples bot do jogo da forca para o discord. Feito com finalidades de estudo.
+Um simples bot do jogo da forca para o discord. Feito com finalidades de estudo. Atualmente o bot conta com
+150+ de palavras.
 
 ## Comandos
 
