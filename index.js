@@ -3,11 +3,22 @@ const Discord = require('discord.js');
 const DB = require('./src/config/data-base.config');
 const bot = new Discord.Client();
 const TOKEN = process.env.TOKEN;
-
+const http = require('http');
 const commands = require('./src/game/game-commands');
 const main = require('./src/game/game-main');
+
 bot.login(TOKEN);
 DB.connection();
+
+http
+	.createServer((req, res) => {
+		res.writeHead(200, {
+			'Content-type': 'text/plain'
+		});
+		res.write('Discord Bot!');
+		res.end();
+	})
+	.listen(4000);
 
 bot.on('ready', () => {
 	console.info(`Logged in as ${bot.user.tag}!`);
