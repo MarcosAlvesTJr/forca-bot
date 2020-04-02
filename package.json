@@ -1,20 +1,21 @@
 {
-  "name": "discord-bot",
-  "version": "1.0.0",
-  "description": "Bot Teste",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
-  },
-  "author": "Marcos A. T. Junior",
-  "license": "ISC",
-  "dependencies": {
-    "axios": "^0.19.2",
-    "discord.js": "^11.5.1",
-    "dotenv": "^8.2.0",
-    "mongoose": "^5.9.6",
-    "nodemon": "^2.0.2",
-    "query-string": "^6.11.1"
-  }
+	"name": "discord-bot",
+	"version": "1.0.0",
+	"description": "Bot Teste",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "nodemon index.js",
+		"start": "node index.js"
+	},
+	"author": "Marcos A. T. Junior",
+	"license": "ISC",
+	"dependencies": {
+		"axios": "^0.19.2",
+		"discord.js": "^11.5.1",
+		"dotenv": "^8.2.0",
+		"mongoose": "^5.9.6",
+		"nodemon": "^2.0.2",
+		"query-string": "^6.11.1"
+	}
 }
