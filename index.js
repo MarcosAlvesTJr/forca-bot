@@ -9,6 +9,7 @@ const main = require('./src/game/game-main');
 
 bot.login(TOKEN);
 DB.connection();
+const PORT = process.env.PORT || 3000;
 
 http
 	.createServer((req, res) => {
@@ -18,7 +19,7 @@ http
 		res.write('Discord Bot!');
 		res.end();
 	})
-	.listen(4000);
+	.listen(PORT);
 
 bot.on('ready', () => {
 	console.info(`Logged in as ${bot.user.tag}!`);
